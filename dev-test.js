@@ -1,12 +1,26 @@
-const Block = require('./block');
+// const Block = require('./block');
 
 // const block = new Block('foo', 'bar!!!!!!', 'zoo', 'this is the data');
 //
 // console.log(block.toString());
 // console.log(Block.genesis().toString());
 
-const fooBlock = Block.mineBlock(Block.genesis(), 'foo');
-const fightersBlock = Block.mineBlock(fooBlock, 'fighters');
+// const fooBlock = Block.mineBlock(Block.genesis(), 'foo');
+// const fightersBlock = Block.mineBlock(fooBlock, 'fighters');
 
-console.log(fooBlock.toString());
-console.log(fightersBlock.toString());
+// console.log(fooBlock.toString());
+// console.log(fightersBlock.toString());
+
+// ------
+
+// const Blockchain = require('./blockchain');
+
+// const bc = new Blockchain();
+
+// for (let i = 0; i < 10; i++) {
+// 	console.log(bc.addBlock(`foo ${i}`).toString());
+// }
+
+const Wallet = require('./wallet');
+const wallet = new Wallet();
+console.log(wallet.toString());
